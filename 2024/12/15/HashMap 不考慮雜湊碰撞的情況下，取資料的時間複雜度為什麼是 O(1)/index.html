@@ -19,13 +19,13 @@
     <meta name="description" content="會查原因是因為在寫 MEXC 的題目時，看到了這題。 的確我知道 Map 在取值的時候是 O(1) 但我不知道是為什麼耶，還記得以前看到 Tree 知道取值至少是 O(log N)，啊現在告訴我是 O(1)，有點魔幻。 Map 的底層結構先來看看 Map 的底層結構，我們所知的 Map 有幾個特性：  無法插入重複的 key key 在插入時會用 hash function 計算 hash cod">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HashMap 不考慮雜湊碰撞的情況下，取資料的時間複雜度為什麼是 O(1).md">
-<meta property="og:url" content="https://memorykghs.github.io/2024/12/15/HashMap-%E4%B8%8D%E8%80%83%E6%85%AE%E9%9B%9C%E6%B9%8A%E7%A2%B0%E6%92%9E%E7%9A%84%E6%83%85%E6%B3%81%E4%B8%8B%EF%BC%8C%E5%8F%96%E8%B3%87%E6%96%99%E7%9A%84%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%E7%82%BA%E4%BB%80%E9%BA%BC%E6%98%AF%20O(1)/index.html">
+<meta property="og:url" content="https://memorykghs.github.io/2024/12/15/HashMap%20%E4%B8%8D%E8%80%83%E6%85%AE%E9%9B%9C%E6%B9%8A%E7%A2%B0%E6%92%9E%E7%9A%84%E6%83%85%E6%B3%81%E4%B8%8B%EF%BC%8C%E5%8F%96%E8%B3%87%E6%96%99%E7%9A%84%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%E7%82%BA%E4%BB%80%E9%BA%BC%E6%98%AF%20O(1)/index.html">
 <meta property="og:site_name" content="Ashleyyy Playground">
 <meta property="og:description" content="會查原因是因為在寫 MEXC 的題目時，看到了這題。 的確我知道 Map 在取值的時候是 O(1) 但我不知道是為什麼耶，還記得以前看到 Tree 知道取值至少是 O(log N)，啊現在告訴我是 O(1)，有點魔幻。 Map 的底層結構先來看看 Map 的底層結構，我們所知的 Map 有幾個特性：  無法插入重複的 key key 在插入時會用 hash function 計算 hash cod">
 <meta property="og:locale" content="zh_CH">
 <meta property="og:image" content="https://memorykghs.github.io/img/hash_map_banner.png">
 <meta property="article:published_time" content="2024-12-15T11:30:58.000Z">
-<meta property="article:modified_time" content="2024-12-15T12:26:15.008Z">
+<meta property="article:modified_time" content="2024-12-15T13:22:08.409Z">
 <meta property="article:author" content="Ashleyyy">
 <meta property="article:tag" content="Data Structure">
 <meta property="article:tag" content="Map">
@@ -140,6 +140,18 @@
           
           
             <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category"></i>
+                <span>Category</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
               <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>Tag</span>
@@ -194,7 +206,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/hash_map_banner.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -409,6 +421,27 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B/" class="category-chain-item">資料結構</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
@@ -428,7 +461,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>HashMap 不考慮雜湊碰撞的情況下，取資料的時間複雜度為什麼是 O(1).md</div>
-      <div>https://memorykghs.github.io/2024/12/15/HashMap-不考慮雜湊碰撞的情況下，取資料的時間複雜度為什麼是 O(1)/</div>
+      <div>https://memorykghs.github.io/2024/12/15/HashMap 不考慮雜湊碰撞的情況下，取資料的時間複雜度為什麼是 O(1)/</div>
     </div>
     <div class="license-meta">
       
